@@ -51,14 +51,14 @@ if __name__ == '__main__':
 
     sorted_list = sorted(list(sorted_list))
 
-    start = time.time()
+    start1 = time.time()
     for target in sorted_list:
         naive_search(sorted_list, target)
-    end = time.time()
-    print(f'Naive search {end - start/length} sec')
+    end1 = time.time()
+    print(f'Naive search {end1 - start1/length} sec')
 
-    start = time.time()
+    start2 = time.time()
     for target in sorted_list:
         binary_search(sorted_list, target)
-    end = time.time()
-    print(f'Binary search {end - start/length} sec')
+    end2 = time.time()
+    print(f'Binary search {end2 - start2/length} sec')
