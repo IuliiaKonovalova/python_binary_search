@@ -34,8 +34,8 @@ def binary_search(list_to_search, target, low=None, high=None):
         return binary_search(list_to_search, target, mid_point+1, high)
 
 
-if __name__ == '__name__':
-    list1 = [1, 3, 5, 6, 7, 9, 11, 13, 15]
-    target1 = 10
+if __name__ == '__main__':
+    list1 = [1, 3, 5, 6, 7, 9, 11, 13, 15, 20]
+    target1 = 9
     print(naive_search(list1, target1))
     print(binary_search(list1, target1))
